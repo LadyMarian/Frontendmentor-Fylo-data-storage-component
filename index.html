@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <div class="container__box">
+      <header class="header">
+        <img src="images/logo.svg" alt="Fylo logo" class="header__logo">
+        <div class="header__icons">
+          <div class="header__icons__box">
+            <img src="images/icon-document.svg" alt="document" class="header__icons__img">
+          </div>
+          <div class="header__icons__box">
+            <img src="images/icon-folder.svg" alt="folder" class="header__icons__img">
+          </div>
+          <div class="header__icons__box">
+            <img src="images/icon-upload.svg" alt="upload" class="header__icons__img">
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <p class="main__text">You've used <strong>815 GB</strong> of your storage</p>
+        <input class="main__slider" id="slider" type="range" min="1" max="1000" value="815">
+        <div class="main__counter">
+          <p class="main__counter__amount"><strong>0 GB</strong></p>
+          <p class="main__counter__amount"><strong>1000 GB</strong></p>
+        </div>
+      </main>
+
+      <div class="remain">
+        <h2 class="remain__number" id="remain">185</h2>
+        <p class="remain__text">GB Left</p>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/LadyMarian">Marjan</a>.
+  </div>
+  
+  <script src="script/script.js"></script>
+</body>
+</html>

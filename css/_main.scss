@@ -1,0 +1,68 @@
+.main {
+    background-color: $DarkBlue;
+    border-radius: 10px;
+    width: 100%;
+    padding: 1.75rem;
+    margin-top: 1rem;
+
+    &__text {
+        margin-top: 0;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    &__counter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.remain {
+    background-color: $PaleBlue;
+    color: $VeryDarkBlue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: .75rem 1rem;
+    border-radius: 12px;
+    margin-top: -2.25rem;
+    font-size: 13px;
+
+    &__number {
+        font-size: 2.25rem;
+        margin: 0;
+    }
+
+    &__text {
+        margin: 0 0 0 .5rem;
+        text-transform: uppercase;
+    }
+}
+
+#slider {
+    width: 100%;
+    background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%) 80.5%, $VeryDarkBlue 80.5%);
+
+    // background-color: $VeryDarkBlue;
+    -webkit-appearance: none;
+    height: 1rem;
+    border: 2px solid $VeryDarkBlue;
+    border-radius: 30px;
+	margin: 0 .5rem;
+
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        background-color: white;
+        height: 12px;
+        width: 12px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    &::-webkit-slider-runnable-track {
+        -webkit-appearance: none;
+        
+    }
+}

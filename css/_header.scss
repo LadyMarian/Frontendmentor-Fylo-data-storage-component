@@ -1,0 +1,30 @@
+.header {
+    background: $DarkBlue;
+    padding: 2.5rem;
+    width: 100%;
+    border-radius: 10px 70px 10px 10px;
+
+    &__logo {
+        height: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__icons {
+        display: flex;
+        column-gap: .75rem;
+
+        &__box {
+            background-color: $VeryDarkBlue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 2.6rem;
+            width: 2.6rem;
+            border-radius: 10px;
+        }
+
+        &__img {
+            width: 1.2rem;
+        }
+    }
+}

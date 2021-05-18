@@ -1,0 +1,61 @@
+@media (min-width: 950px) {
+    body {
+        height: 100vh;
+        background-color: $VeryDarkBlue;
+        background-image: url(../images/bg-desktop.png);
+        background-position: bottom center;
+        background-size: 100%;
+    }
+
+    .container {
+        width: 950px;
+    }
+
+    .container__box {
+        height: auto;
+        margin: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+    }
+
+    .header {
+        width: 35%;
+
+        &__logo {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .main {
+        width: 60%;
+        padding: 2rem 2.5rem 1.5rem 2.5rem;
+
+        &__text {
+            text-align: left;
+        }
+
+        &__counter {
+            margin-top: -.5rem;
+        }
+    }
+
+    .remain {
+        position: absolute;
+        right: 2rem;
+        top: 2.3rem;
+        
+        &__text::after {
+            content: "";
+            width: 0;
+            border-top: 25px solid transparent;
+            border-right: 25px solid $PaleBlue;
+            border-bottom: 25px solid transparent;
+            border-left: 25px solid transparent;
+            position: relative;
+            top: 1.5rem;
+            right: -1rem;
+        }
+    }
+}
